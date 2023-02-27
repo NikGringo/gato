@@ -23,8 +23,6 @@ function Table(props) {
                     </tr>)}
                 </tbody>
             </table>
-            <br />
-            <a href="pages/about.html">About</a>
         </div>
     )
 }

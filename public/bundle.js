@@ -15,17 +15,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const ReactDOM = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Header = __webpack_require__(/*! ./components/header.jsx */ \"./app/components/header.jsx\");\nconst Table = __webpack_require__(/*! ./components/table.jsx */ \"./app/components/table.jsx\");\nconst header = \"Gato site\";\nReactDOM.createRoot(document.getElementById(\"app\")).render( /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(Header, {\n  text: header\n}), /*#__PURE__*/React.createElement(\"br\", null), /*#__PURE__*/React.createElement(Table, null)));\n\n//# sourceURL=webpack://Gato/./app/app.jsx?");
-
-/***/ }),
-
-/***/ "./app/components/header.jsx":
-/*!***********************************!*\
-  !*** ./app/components/header.jsx ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Header(props) {\n  return /*#__PURE__*/React.createElement(\"h2\", null, props.text);\n}\nmodule.exports = Header;\n\n//# sourceURL=webpack://Gato/./app/components/header.jsx?");
+eval("const ReactDOM = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Main = __webpack_require__(/*! ./pages/main.jsx */ \"./app/pages/main.jsx\");\nReactDOM.createRoot(document.getElementById(\"app\")).render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Main, null)));\n\n//# sourceURL=webpack://Gato/./app/app.jsx?");
 
 /***/ }),
 
@@ -35,7 +25,17 @@ eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/inde
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Table(props) {\n  const columns = [\"Номер\", \"Название\", \"Продолжительность\"];\n  const data = [{\n    title: \"The last of us\",\n    duration: \"01:30\"\n  }, {\n    title: \"Wensday\",\n    duration: \"01:30\"\n  }, {\n    title: \"Ваша честь\",\n    duration: \"01:30\"\n  }];\n  return /*#__PURE__*/React.createElement(\"div\", {\n    class: \"m-3\"\n  }, /*#__PURE__*/React.createElement(\"table\", {\n    class: \"table table-striped\"\n  }, /*#__PURE__*/React.createElement(\"thead\", {\n    class: \"table table-dark\"\n  }, /*#__PURE__*/React.createElement(\"tr\", null, columns.map(x => /*#__PURE__*/React.createElement(\"th\", null, x)))), /*#__PURE__*/React.createElement(\"tbody\", null, data.map((x, i) => /*#__PURE__*/React.createElement(\"tr\", null, /*#__PURE__*/React.createElement(\"td\", null, i + 1), /*#__PURE__*/React.createElement(\"td\", null, x.title), /*#__PURE__*/React.createElement(\"td\", null, x.duration))))), /*#__PURE__*/React.createElement(\"br\", null), /*#__PURE__*/React.createElement(\"a\", {\n    href: \"pages/about.html\"\n  }, \"About\"));\n}\nmodule.exports = Table;\n\n//# sourceURL=webpack://Gato/./app/components/table.jsx?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Table(props) {\n  const columns = [\"Номер\", \"Название\", \"Продолжительность\"];\n  const data = [{\n    title: \"The last of us\",\n    duration: \"01:30\"\n  }, {\n    title: \"Wensday\",\n    duration: \"01:30\"\n  }, {\n    title: \"Ваша честь\",\n    duration: \"01:30\"\n  }];\n  return /*#__PURE__*/React.createElement(\"div\", {\n    class: \"m-3\"\n  }, /*#__PURE__*/React.createElement(\"table\", {\n    class: \"table table-striped\"\n  }, /*#__PURE__*/React.createElement(\"thead\", {\n    class: \"table table-dark\"\n  }, /*#__PURE__*/React.createElement(\"tr\", null, columns.map(x => /*#__PURE__*/React.createElement(\"th\", null, x)))), /*#__PURE__*/React.createElement(\"tbody\", null, data.map((x, i) => /*#__PURE__*/React.createElement(\"tr\", null, /*#__PURE__*/React.createElement(\"td\", null, i + 1), /*#__PURE__*/React.createElement(\"td\", null, x.title), /*#__PURE__*/React.createElement(\"td\", null, x.duration))))));\n}\nmodule.exports = Table;\n\n//# sourceURL=webpack://Gato/./app/components/table.jsx?");
+
+/***/ }),
+
+/***/ "./app/pages/main.jsx":
+/*!****************************!*\
+  !*** ./app/pages/main.jsx ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Table = __webpack_require__(/*! ../components/table.jsx */ \"./app/components/table.jsx\");\nfunction Main() {\n  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(\"h2\", {\n    class: \"m-3\"\n  }, \"Main page\"), /*#__PURE__*/React.createElement(Table, null));\n}\nmodule.exports = Main;\n\n//# sourceURL=webpack://Gato/./app/pages/main.jsx?");
 
 /***/ }),
 
