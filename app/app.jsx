@@ -5,8 +5,4 @@ const Main = require("./pages/main.jsx");
 ReactDOM.createRoot(
     document.getElementById("app")
 )
-    .render(
-        <>
-            <Main />
-        </>
-    );
+    .render ( <Main /> );
