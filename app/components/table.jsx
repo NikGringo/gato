@@ -3,9 +3,9 @@ const React = require("react");
 function Table(props) {
     const columns = ["Номер", "Название", "Продолжительность", "Рейтинг"]
     const data = [
-        { title: "The last of us", duration: "01:30", rait: "4.5" },
-        { title: "Wensday", duration: "01:30", rait: "5"  },
-        { title: "Ваша честь", duration: "01:30", rait: "4.7"  },
+        { title: "The last of us", duration: "01:15", rait: "4.5" },
+        { title: "Wensday", duration: "01:07", rait: "5"  },
+        { title: "Ваша честь", duration: "01:11", rait: "4.7"  },
     ]
     return (
         <div class="m-3">
