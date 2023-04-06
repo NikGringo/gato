@@ -25,7 +25,7 @@ eval("const ReactDOM = __webpack_require__(/*! react-dom/client */ \"./node_modu
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Table(props) {\n  const columns = [\"Номер\", \"Название\", \"Продолжительность\", \"Рейтинг\"];\n  const data = [{\n    title: \"The last of us\",\n    duration: \"01:15\",\n    rait: \"4.5\"\n  }, {\n    title: \"Wensday\",\n    duration: \"01:07\",\n    rait: \"5\"\n  }, {\n    title: \"Ваша честь\",\n    duration: \"01:11\",\n    rait: \"4.7\"\n  }];\n  return /*#__PURE__*/React.createElement(\"div\", {\n    class: \"m-3\"\n  }, /*#__PURE__*/React.createElement(\"table\", {\n    class: \"table table-striped\"\n  }, /*#__PURE__*/React.createElement(\"thead\", {\n    class: \"table table-dark\"\n  }, /*#__PURE__*/React.createElement(\"tr\", null, columns.map(x => /*#__PURE__*/React.createElement(\"th\", null, x)))), /*#__PURE__*/React.createElement(\"tbody\", null, data.map((x, i) => /*#__PURE__*/React.createElement(\"tr\", null, /*#__PURE__*/React.createElement(\"td\", null, i + 1), /*#__PURE__*/React.createElement(\"td\", null, x.title), /*#__PURE__*/React.createElement(\"td\", null, x.duration), /*#__PURE__*/React.createElement(\"td\", null, x.rait))))));\n}\nmodule.exports = Table;\n\n//# sourceURL=webpack://Gato/./app/components/table.jsx?");
+eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Cla = __webpack_require__(/*! ../resources/classes */ \"./app/resources/classes.js\");\nfunction Table(props) {\n  const columns = [\"Номер\", \"Время\", \"Дисциплина\", \"Кабинет\"];\n  const data = [{\n    title: \"The last of us\",\n    duration: \"01:15\",\n    rait: \"4.5\"\n  }, {\n    title: \"Wensday\",\n    duration: \"01:07\",\n    rait: \"5\"\n  }, {\n    title: \"Ваша честь\",\n    duration: \"01:11\",\n    rait: \"4.7\"\n  }];\n  const classes = [{\n    day: \"Пятница 07.04.2023\",\n    classes: [{\n      number: 1,\n      time: \"08:30 - 10:00\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 2,\n      time: \"10:10 - 11:40\",\n      name: \"Исследование операций (лаб)\",\n      cabinet: \"28\"\n    }, {\n      number: 3,\n      time: \"12:10 - 13:40\",\n      name: \"Исследование операций (лаб)\",\n      cabinet: \"28\"\n    }, {\n      number: 4,\n      time: \"14:00 - 15:30\",\n      name: \"МСАД (консультация)\",\n      cabinet: \"1\"\n    }, {\n      number: 5,\n      time: \"15:40 - 17:10\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 6,\n      time: \"17:20 - 18:30\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 7,\n      time: \"18:30 - 20:00\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 8,\n      time: \"20:10 - 21:40\",\n      name: \"-\",\n      cabinet: \"\"\n    }]\n  }, {\n    day: \"Понедельник 10.04.2023\",\n    classes: [{\n      number: 1,\n      time: \"08:30 - 10:00\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 2,\n      time: \"10:10 - 11:40\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 3,\n      time: \"12:10 - 13:40\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 4,\n      time: \"14:00 - 15:30\",\n      name: \"МСАД (экзамен)\",\n      cabinet: \"1\"\n    }, {\n      number: 5,\n      time: \"15:40 - 17:10\",\n      name: \"Исследование операций (лаб)\",\n      cabinet: \"7\"\n    }, {\n      number: 6,\n      time: \"17:20 - 18:30\",\n      name: \"Исследование операций (лаб)\",\n      cabinet: \"7\"\n    }, {\n      number: 7,\n      time: \"18:30 - 20:00\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 8,\n      time: \"20:10 - 21:40\",\n      name: \"-\",\n      cabinet: \"\"\n    }]\n  }, {\n    day: \"Вторник 11.04.2023\",\n    classes: [{\n      number: 1,\n      time: \"08:30 - 10:00\",\n      name: \"Базы данных (лаба)\",\n      cabinet: \"29\"\n    }, {\n      number: 2,\n      time: \"10:10 - 11:40\",\n      name: \"Базы данных (лаба)\",\n      cabinet: \"29\"\n    }, {\n      number: 3,\n      time: \"12:10 - 13:40\",\n      name: \"Базы данных (лаба)\",\n      cabinet: \"29\"\n    }, {\n      number: 4,\n      time: \"14:00 - 15:30\",\n      name: \"Базы данных (лаба)\",\n      cabinet: \"29\"\n    }, {\n      number: 5,\n      time: \"15:40 - 17:10\",\n      name: \"Базы данных (КСР, диф. зачет)\",\n      cabinet: \"29\"\n    }, {\n      number: 6,\n      time: \"17:20 - 18:30\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 7,\n      time: \"18:30 - 20:00\",\n      name: \"-\",\n      cabinet: \"\"\n    }, {\n      number: 8,\n      time: \"20:10 - 21:40\",\n      name: \"-\",\n      cabinet: \"\"\n    }]\n  }];\n  return /*#__PURE__*/React.createElement(\"div\", {\n    class: \"m-3\"\n  }, classes.map(item => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(\"h2\", null, item.day), /*#__PURE__*/React.createElement(\"table\", {\n    class: \"table table-striped\",\n    style: {\n      width: '50vw'\n    }\n  }, /*#__PURE__*/React.createElement(\"thead\", {\n    class: \"table table-dark\"\n  }, /*#__PURE__*/React.createElement(\"tr\", null, columns.map(x => /*#__PURE__*/React.createElement(\"th\", null, x)))), /*#__PURE__*/React.createElement(\"tbody\", null, item.classes.map(x => /*#__PURE__*/React.createElement(\"tr\", null, /*#__PURE__*/React.createElement(\"td\", null, x.number), /*#__PURE__*/React.createElement(\"td\", null, x.time), /*#__PURE__*/React.createElement(\"td\", null, x.name), /*#__PURE__*/React.createElement(\"td\", null, x.cabinet))))))));\n}\nmodule.exports = Table;\n\n//# sourceURL=webpack://Gato/./app/components/table.jsx?");
 
 /***/ }),
 
@@ -36,6 +36,17 @@ eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/inde
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Table = __webpack_require__(/*! ../components/table.jsx */ \"./app/components/table.jsx\");\nfunction Main() {\n  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(\"h2\", {\n    class: \"m-3\"\n  }, \"Main page\"), /*#__PURE__*/React.createElement(Table, null));\n}\nmodule.exports = Main;\n\n//# sourceURL=webpack://Gato/./app/pages/main.jsx?");
+
+/***/ }),
+
+/***/ "./app/resources/classes.js":
+/*!**********************************!*\
+  !*** ./app/resources/classes.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst Cla = () => [{\n  day: \"Пятница 07.04.2023\",\n  classes: [{\n    number: 1,\n    name: \"Окно\",\n    time: \"08:30 - 10:00\",\n    cabinet: \"\"\n  }, {\n    number: 2,\n    name: \"Исследование операций (лаб)\",\n    time: \"10:10 - 11:40\",\n    cabinet: \"28\"\n  }]\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cla);\n\n//# sourceURL=webpack://Gato/./app/resources/classes.js?");
 
 /***/ }),
 
@@ -146,6 +157,34 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
