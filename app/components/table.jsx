@@ -19,7 +19,7 @@ function Table({columns, data}) {
                             </tr>
                         </thead>
                         <tbody>
-                            {item.classes.map((x) => <tr style={{backgroundColor: x.name === "-" ? '' : 'lightgreen'}}>
+                            {item.classes.map((x) => <tr style={{backgroundColor: x.name === "-" ? '' : 'lightgray'}}>
                                 <td>{x.number}</td>
                                 <td>{x.time}</td>
                                 <td>{x.name}</td>
