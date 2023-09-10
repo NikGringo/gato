@@ -108,7 +108,7 @@ export const classes = [
         ]
     },
     {
-        day: "Понедельник 10.04.2023",
+        day: "Понедельник 13.11.2023",
         classes: [
             {
                 number: 1,
@@ -161,7 +161,7 @@ export const classes = [
         ]
     },
     {
-        day: "Вторник 11.04.2023",
+        day: "Вторник 14.11.2023",
         classes: [
             {
                 number: 1,
@@ -214,7 +214,7 @@ export const classes = [
         ]
     },
     {
-        day: "Среда 12.04.2023",
+        day: "Среда 15.11.2023",
         classes: [
             {
                 number: 1,
