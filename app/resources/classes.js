@@ -267,7 +267,7 @@ export const classes = [
         ]
     },
     {
-        day: "Четверг 14.11.2023",
+        day: "Четверг 16.11.2023",
         classes: [
             {
                 number: 1,
