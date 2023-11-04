@@ -351,7 +351,6 @@ export const classes = [
                 time: "15:40 - 17:10",
                 name: "-",
                 cabinet: ""
-<<<<<<< HEAD
             },
             {
                 number: 6,
@@ -516,11 +515,7 @@ export const classes = [
                 number: 6,
                 time: "17:20 - 18:30",
                 name: "Базы данных (лаб)",
-                cabinet: "29"
-=======
-                name: "-",
-                cabinet: ""
->>>>>>> 3f12af9dfd2b3dfb9f39b884b0bd398b81c26b3b
+                cabinet: "29",
             },
             {
                 number: 7,
@@ -741,7 +736,6 @@ export const classes = [
                 cabinet: ""
             },
             {
->>>>>>> 3f12af9dfd2b3dfb9f39b884b0bd398b81c26b3b
                 number: 8,
                 time: "20:10 - 21:40",
                 name: "-",
