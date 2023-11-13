@@ -9,7 +9,7 @@ function Main() {
 
     return (
         <>
-            <DateCounter start='13.11.2023' end='10.12.2023'/>
+            <DateCounter start='13.11.2023' end='03.12.2023'/>
             <Header text='4 курс 1 сессия'/>
             <Table data={classes} columns={columns}/>
         </>
