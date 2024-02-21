@@ -1,7 +1,8 @@
 const React = require("react");
 
 const compareDate = (str) => {
-    return (new Date(str.split(" ")[1].split(".").reverse()).getDate() >= new Date().getDate() && 
+    return (
+    new Date(str.split(" ")[1].split(".").reverse()).getDate() >= new Date().getDate() &&
     new Date(str.split(" ")[1].split(".").reverse()).getMonth() >= new Date().getMonth()) || new Date(str.split(" ")[1].split(".").reverse()).getMonth() > new Date().getMonth()
 }
 
