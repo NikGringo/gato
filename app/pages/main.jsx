@@ -9,8 +9,8 @@ function Main() {
 
     return (
         <>
-            <DateCounter start='13.11.2023' end='03.12.2023'/>
-            <Header text='4 курс 7 сессия'/>
+            <DateCounter start='11.03.2024' end='31.03.2024'/>
+            <Header text='4 курс 8 сессия'/>
             <Table data={classes} columns={columns}/>
         </>
     )
